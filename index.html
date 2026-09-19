@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD231 Web Frontend Development 1 course home page featuring student information, web certificate courses, projects, and learning activities.">
+    <meta name="author" content="Tendayi Gabriel Mazvomba">
+    <title>Course Home Page | WDD231</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <!-- Javascript links-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site logo">
+        <span>Tendayi Gabriel Mazvomba</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <p>I am Tendayi Gabriel Mazvomba, a student studying web development. I am developing my skills in HTML,
+                CSS, JavaScript, and responsive web design through the Web and Computer Programming course.</p>
+        </section>
+
+        <section>
+            <h2>Student Photo</h2>
+            <img src="images/student-photo.webp" alt="Photo of Tendayi Gabriel Mazvomba">
+        </section>
+
+        <section>
+            <h2>Web Certificate Courses</h2>
+
+            <div class="course-filter">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+
+            <div id="course-list"></div>
+
+            <p>
+                The total credits for the courses listed above is <span id="total-credits"></span>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/" aria-label="Github"><img src="images/github.svg" alt="Github"></a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://x.com/" aria-label="X"><img src="images/twitter-x.svg" alt="Twitter-X"></a>
+        </div>
+
+        <div class="copyright">
+            <p>
+                &copy; <span id="currentyear"></span> | Tendayi Gabriel Mazvomba | Bulawayo, Zimbabwe
+            </p>
+        </div>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
