@@ -73,7 +73,7 @@ nav {
     background-color: #172b4d;
 }
 
-nav.show {
+nav.open {
     display: block;
 }
 
