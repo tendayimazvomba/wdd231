@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Explore businesses and organizations that are members of the Bulawayo Chamber of Commerce in Bulawayo, Zimbabwe.">
+
+    <meta name="author" content="Tendayi Gabriel Mazvomba">
+
+    <title>Directory | Bulawayo Chamber of Commerce</title>
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:title" content="Bulawayo Chamber of Commerce | Business Directory">
+
+    <meta property="og:description"
+        content="Explore businesses and organizations that are members of the Bulawayo Chamber of Commerce in Bulawayo, Zimbabwe.">
+
+    <meta property="og:image" content="https://tendayimazvomba.github.io/wdd231/chamber/images/social-share.webp">
+
+    <meta property="og:url" content="https://tendayimazvomba.github.io/wdd231/chamber/directory.html">
+
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="site-brand">
+            <img src="images/logo.svg" alt="Bulawayo Chamber of Commerce logo" width="70" height="70">
+
+            <div>
+                <span>Bulawayo</span>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <button id="nav-button" class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        </button>
+    </header>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html" class="active">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Business Directory</h1>
+
+        <p class="directory-intro">
+            Discover businesses and organizations that are members of the
+            Bulawayo Chamber of Commerce.
+        </p>
+
+        <div class="directory-menu">
+            <button id="grid" type="button">Grid View</button>
+            <button id="list" type="button">List View</button>
+        </div>
+
+        <div id="members" class="grid"></div>
+
+    </main>
+
+    <footer>
+
+        <div class="contact-info">
+            <p><strong>Bulawayo Chamber of Commerce</strong></p>
+            <p>Bulawayo, Zimbabwe</p>
+            <p>info@bulawayochamber.example</p>
+            <p>+263 29 200 0000</p>
+        </div>
+
+        <div class="development-info">
+            <p>
+                &copy; <span id="currentyear"></span>
+                Bulawayo Chamber of Commerce
+            </p>
+
+            <p>
+                Tendayi Gabriel Mazvomba | WDD 231
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

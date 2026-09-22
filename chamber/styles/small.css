@@ -1,0 +1,267 @@
+/******** General ********/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #222222;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+}
+
+
+/******** Header ********/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #003B5C;
+    color: #ffffff;
+}
+
+.site-brand {
+    display: flex;
+    align-items: center;
+}
+
+.site-brand img {
+    width: 60px;
+    height: 60px;
+    margin-right: 0.75rem;
+    object-fit: contain;
+}
+
+.site-brand span {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.site-brand p {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9rem;
+}
+
+
+/******** Hamburger ********/
+
+.hamburger {
+    width: 44px;
+    height: 44px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2.5rem;
+}
+
+
+/******** Navigation ********/
+
+nav {
+    display: none;
+    background-color: #172B4D;
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    border-bottom: 1px solid #ffffff;
+}
+
+nav a {
+    display: block;
+    padding: 0.9rem 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background-color: #0067A5;
+}
+
+nav a.active {
+    background-color: #0067A5;
+}
+
+
+/******** Main ********/
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    margin-top: 0;
+    color: #003B5C;
+    font-size: 2rem;
+}
+
+.directory-intro {
+    margin-bottom: 1.5rem;
+}
+
+
+/******** Directory Controls ********/
+
+.directory-menu {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+}
+
+.directory-menu button {
+    padding: 0.7rem 1.2rem;
+    border: 1px solid #003B5C;
+    border-radius: 4px;
+    background-color: #003B5C;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.directory-menu button:hover {
+    background-color: #0067A5;
+}
+
+
+/******** Member Cards ********/
+
+#members {
+    width: 100%;
+}
+
+#members section {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    background-color: #F1F3F5;
+}
+
+#members h2 {
+    margin-top: 0;
+    color: #003B5C;
+    font-size: 1.3rem;
+}
+
+#members img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 1rem;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+#members p {
+    margin: 0.5rem 0;
+}
+
+#members a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    background-color: #003B5C;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#members a:hover {
+    background-color: #0067A5;
+}
+
+
+/******** Grid View ********/
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+
+/******** List View ********/
+
+.list {
+    display: block;
+}
+
+.list section {
+    margin-bottom: 0.5rem;
+    border-radius: 0;
+}
+
+.list section img {
+    display: none;
+}
+
+
+/******** Error ********/
+
+.error-message {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #777777;
+}
+
+
+/******** Footer ********/
+
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem 1rem;
+    background-color: #D9DDE2;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.35rem 0;
+}
+
+.contact-info {
+    margin-bottom: 1rem;
+}
+
+#lastModified {
+    font-size: 0.9rem;
+}

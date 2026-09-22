@@ -1,0 +1,85 @@
+@media screen and (min-width: 700px) {
+
+    /******** Header ********/
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .site-brand img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .site-brand span {
+        font-size: 1.5rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+
+    /******** Navigation ********/
+
+    nav {
+        display: block;
+        background-color: #172B4D;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav li {
+        border-bottom: none;
+    }
+
+    nav a {
+        padding: 0.8rem 1.5rem;
+    }
+
+
+    /******** Main ********/
+
+    main {
+        padding: 1.5rem;
+    }
+
+
+    /******** Directory Grid ********/
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /******** Footer ********/
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 1.5rem 2rem;
+    }
+
+    .contact-info {
+        margin-bottom: 0;
+    }
+
+    .development-info {
+        text-align: right;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}

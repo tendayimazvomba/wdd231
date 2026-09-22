@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Matobo Tech Solutions",
+        "address": "12 Main Street, Bulawayo",
+        "phone": "+263 29 200 1001",
+        "website": "https://example.com",
+        "image": "matobo-tech.webp",
+        "membership": 3,
+        "description": "Technology and digital solutions for businesses."
+    },
+    {
+        "name": "City Hardware Centre",
+        "address": "45 Fife Street, Bulawayo",
+        "phone": "+263 29 200 1002",
+        "website": "https://example.com",
+        "image": "city-hardware.webp",
+        "membership": 2,
+        "description": "Building materials and hardware supplies."
+    },
+    {
+        "name": "Mthwakazi Creative Studio",
+        "address": "18 Joshua Nkomo Street, Bulawayo",
+        "phone": "+263 29 200 1003",
+        "website": "https://example.com",
+        "image": "creative-studio.webp",
+        "membership": 1,
+        "description": "Graphic design, branding and digital media services."
+    },
+    {
+        "name": "Khami Business Consultants",
+        "address": "23 Fort Street, Bulawayo",
+        "phone": "+263 29 200 1004",
+        "website": "https://example.com",
+        "image": "khami-consulting.webp",
+        "membership": 2,
+        "description": "Business advisory and professional consulting services."
+    },
+    {
+        "name": "Bulawayo Fresh Foods",
+        "address": "61 Robert Mugabe Way, Bulawayo",
+        "phone": "+263 29 200 1005",
+        "website": "https://example.com",
+        "image": "fresh-foods.webp",
+        "membership": 3,
+        "description": "Fresh food distribution and catering supplies."
+    },
+    {
+        "name": "Umguza Transport Services",
+        "address": "8 Plumtree Road, Bulawayo",
+        "phone": "+263 29 200 1006",
+        "website": "https://example.com",
+        "image": "umguza-transport.webp",
+        "membership": 1,
+        "description": "Local transport and logistics services."
+    },
+    {
+        "name": "Centenary Property Group",
+        "address": "30 Jason Moyo Street, Bulawayo",
+        "phone": "+263 29 200 1007",
+        "website": "https://example.com",
+        "image": "centenary-property.webp",
+        "membership": 2,
+        "description": "Property management and real estate services."
+    }
+]
