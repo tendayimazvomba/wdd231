@@ -118,7 +118,7 @@ nav a:hover {
 nav a.active {
     background-color: #003B5C;
     color: #ffffff;
-    border-bottom: 4px solid solid #ffffff;
+    border-bottom: 4px solid #ffffff;
 }
 
 
