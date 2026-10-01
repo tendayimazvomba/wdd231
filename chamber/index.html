@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Bulawayo Chamber of Commerce connects businesses, promotes economic development, and supports the business community in Bulawayo, Zimbabwe.">
+
+    <meta name="author" content="Tendayi Gabriel Mazvomba">
+
+    <title>Home | Bulawayo Chamber of Commerce</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Bulawayo Chamber of Commerce">
+
+    <meta property="og:description"
+        content="Connecting businesses and supporting economic growth in Bulawayo, Zimbabwe.">
+
+    <meta property="og:image" content="https://tendayimazvomba.github.io/wdd231/chamber/images/hero.webp">
+
+    <meta property="og:url" content="https://tendayimazvomba.github.io/wdd231/chamber/">
+
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="site-brand">
+            <img src="images/logo.svg" alt="Bulawayo Chamber of Commerce logo" width="70" height="70">
+
+            <div>
+                <span>Bulawayo</span>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <button id="nav-button" class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        </button>
+    </header>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main class="home-main">
+
+        <h1>Bulawayo Chamber of Commerce</h1>
+
+        <!-- Hero -->
+        <section class="hero">
+            <img src="images/hero.webp" alt="Business district in Bulawayo, Zimbabwe" width="1200" height="600">
+
+            <div class="hero-content">
+                <h2>Building Business. Growing Bulawayo.</h2>
+                <p>Connecting businesses, creating opportunities, and strengthening our local economy.</p>
+
+                <a href="join.html" class="cta-button">
+                    Join the Chamber
+                </a>
+            </div>
+        </section>
+
+        <!-- Information -->
+        <div class="home-information">
+
+            <!-- Events -->
+            <section class="events">
+                <h2>Current Events</h2>
+
+                <article>
+                    <h3>Bulawayo Business Networking Breakfast</h3>
+                    <p>
+                        Connect with local entrepreneurs and business
+                        leaders while exploring opportunities for
+                        collaboration and growth.
+                    </p>
+                    <p><strong>Date:</strong> 15 October 2026</p>
+                </article>
+
+                <article>
+                    <h3>SME Digital Business Workshop</h3>
+                    <p>
+                        A practical session helping small businesses
+                        use digital tools to reach customers and
+                        improve their operations.
+                    </p>
+                    <p><strong>Date:</strong> 23 October 2026</p>
+                </article>
+            </section>
+
+            <!-- Weather -->
+            <section class="weather">
+                <h2>Bulawayo Weather</h2>
+
+                <div class="current-weather">
+                    <p>
+                        <strong>Temperature:</strong>
+                        <span id="current-temp">--</span>
+                    </p>
+
+                    <p>
+                        <strong>Conditions:</strong>
+                        <span id="weather-description">Loading...</span>
+                    </p>
+                </div>
+
+                <h3>3-Day Forecast</h3>
+
+                <div id="forecast"></div>
+            </section>
+
+        </div>
+
+        <!-- Member Spotlights -->
+        <section class="spotlight-section">
+            <h2>Member Spotlights</h2>
+
+            <div id="spotlights"></div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="contact-info">
+            <p><strong>Bulawayo Chamber of Commerce</strong></p>
+            <p>Bulawayo, Zimbabwe</p>
+            <p>info@bulawayochamber.example</p>
+            <p>+263 29 200 0000</p>
+        </div>
+
+        <div class="development-info">
+            <p>
+                &copy; <span id="currentyear"></span>
+                Bulawayo Chamber of Commerce
+            </p>
+
+            <p>Tendayi Gabriel Mazvomba | WDD 231</p>
+
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -73,6 +73,27 @@
     .development-info {
         text-align: right;
     }
+
+    /******** HOME PAGE - LARGE VIEW ********/
+
+    .home-information {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #spotlights {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero-content {
+        left: 2rem;
+        bottom: 2rem;
+
+        max-width: 500px;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
 }
 
 
