@@ -99,6 +99,10 @@ function displayCourses(courses) {
 <span>${course.credits} credits</span>
 `;
 
+        courseCard.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
+
         courseList.appendChild(courseCard);
     });
 
@@ -125,3 +129,45 @@ document.querySelector("#wdd").addEventListener("click", () => {
 });
 
 displayCourses(courses);
+
+
+
+// Modal
+const courseDetails = document.querySelector("#course-details");
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id="closeModal" aria-label="Close course details">
+            ❌
+        </button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+    `;
+
+    courseDetails.showModal();
+
+    // Close button
+    const closeModal = document.querySelector("#closeModal");
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
+// Close when clicking outside the modal
+courseDetails.addEventListener("click", (event) => {
+    const rect = courseDetails.getBoundingClientRect();
+
+    if (
+        event.clientX < rect.left ||
+        event.clientX > rect.right ||
+        event.clientY < rect.top ||
+        event.clientY > rect.bottom
+    ) {
+        courseDetails.close();
+    }
+});

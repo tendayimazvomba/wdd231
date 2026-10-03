@@ -212,3 +212,65 @@ footer {
 .copyright p, #lastModified {
     margin: 0.5rem 0;
 }
+
+
+/******** Course Details Modal ********/
+
+dialog {
+    width: 90%;
+    max-width: 500px;
+    padding: 1.5rem;
+    border: 2px solid #003B5C;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #222222;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+/******** Modal Backdrop ********/
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+/******** Modal Heading ********/
+
+dialog h2 {
+    margin-top: 0;
+    padding: 0.75rem;
+    background-color: #003B5C;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/******** Modal Content ********/
+
+dialog p {
+    margin: 0.75rem 0;
+    line-height: 1.6;
+}
+
+/******** Modal Close Button ********/
+
+dialog button {
+    display: block;
+    margin: 1.5rem 0 0 auto;
+    padding: 0.6rem 1.25rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #003B5C;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+dialog button:hover {
+    background-color: #0067A5;
+}
+
+dialog button:focus-visible {
+    outline: 3px solid #0067A5;
+    outline-offset: 3px;
+}

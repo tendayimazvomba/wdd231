@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Apply to join the Bulawayo Chamber of Commerce and explore our membership opportunities.">
+    <meta name="author" content="Tendayi Gabriel Mazvomba">
+    <title>Join | Bulawayo Chamber of Commerce</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Bulawayo Chamber of Commerce">
+
+    <meta property="og:description"
+        content="Connecting businesses and supporting economic growth in Bulawayo, Zimbabwe.">
+
+    <meta property="og:image" content="https://tendayimazvomba.github.io/wdd231/chamber/images/hero.webp">
+
+    <meta property="og:url" content="https://tendayimazvomba.github.io/wdd231/chamber/">
+
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="site-brand">
+            <img src="images/logo.svg" alt="Bulawayo Chamber of Commerce logo" width="70" height="70">
+            <div>
+                <span>Bulawayo</span>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <button id="nav-button" class="hamburger" type="button" aria-label="Open navigation menu"
+            aria-expanded="false"></button>
+    </header>
+
+    <nav id="navigation" aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+        </ul>
+    </nav>
+
+    <main class="join-main">
+        <h1>Join the Chamber</h1>
+        <p>Become part of Bulawayo's growing business community.</p>
+
+        <div class="join-layout">
+            <section class="application">
+                <h2>Membership Application</h2>
+
+                <form method="get" action="thankyou.html">
+                    <label>
+                        First Name *
+                        <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Last Name *
+                        <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Organizational Title
+                        <input type="text" name="organizationTitle" title="At least seven letters, hyphens or spaces"
+                            autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+                    </label>
+
+                    <label>
+                        Email Address *
+                        <input type="email" name="email" title="Enter your email address" autocomplete="email"
+                            placeholder="name@example.com" required>
+                    </label>
+
+                    <label>
+                        Mobile Phone *
+                        <input type="tel" name="phone" title="Enter your mobile number" autocomplete="tel" required>
+                    </label>
+
+                    <label>
+                        Business / Organization Name *
+                        <input type="text" name="organization" title="Enter your organization name"
+                            autocomplete="organization" required>
+                    </label>
+
+                    <label>
+                        Membership Level *
+                        <select name="membership" required>
+                            <option value="" disabled selected>
+                                Select a membership level
+                            </option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Business / Organization Description
+                        <textarea name="description" rows="5" title="Describe your business or organization">
+                        </textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <button type="submit" class="submit-button">
+                        Submit Application
+                    </button>
+                </form>
+            </section>
+
+            <section class="membership-section">
+                <h2>Membership Levels</h2>
+
+                <div class="membership-cards">
+                    <article class="membership-card">
+                        <h3>NP Membership</h3>
+                        <p>No membership fee for nonprofit organizations.</p>
+                        <button type="button" data-modal="np-modal">
+                            View Benefits
+                        </button>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Bronze Membership</h3>
+                        <p>Essential networking and business exposure.</p>
+                        <button type="button" data-modal="bronze-modal">
+                            View Benefits
+                        </button>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Silver Membership</h3>
+                        <p>Enhanced visibility and development opportunities.</p>
+                        <button type="button" data-modal="silver-modal">
+                            View Benefits
+                        </button>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Gold Membership</h3>
+                        <p>Premium exposure and sponsorship opportunities.</p>
+                        <button type="button" data-modal="gold-modal">
+                            View Benefits
+                        </button>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <!-- Membership information modals -->
+
+        <dialog id="np-modal">
+            <h2>NP Membership Benefits</h2>
+            <p>Free membership for nonprofit organizations.</p>
+            <ul>
+                <li>Chamber directory listing</li>
+                <li>Community networking opportunities</li>
+                <li>Access to selected events</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="bronze-modal">
+            <h2>Bronze Membership Benefits</h2>
+            <p>Entry-level paid membership.</p>
+            <ul>
+                <li>Business directory listing</li>
+                <li>Networking events</li>
+                <li>Member newsletters</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="silver-modal">
+            <h2>Silver Membership Benefits</h2>
+            <p>Includes Bronze benefits, plus:</p>
+            <ul>
+                <li>Business training opportunities</li>
+                <li>Discounted event attendance</li>
+                <li>Eligibility for homepage spotlights</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="gold-modal">
+            <h2>Gold Membership Benefits</h2>
+            <p>Includes Silver benefits, plus:</p>
+            <ul>
+                <li>Premium advertising opportunities</li>
+                <li>Priority event sponsorship opportunities</li>
+                <li>Enhanced business promotion</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p><strong>Bulawayo Chamber of Commerce</strong></p>
+            <p>Bulawayo, Zimbabwe</p>
+            <p>info@bulawayochamber.example</p>
+        </div>
+
+        <div class="development-info">
+            <p>&copy; <span id="currentyear"></span>
+                Bulawayo Chamber of Commerce</p>
+            <p>Tendayi Gabriel Mazvomba | WDD 231</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
