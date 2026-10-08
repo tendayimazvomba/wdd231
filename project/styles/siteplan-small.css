@@ -1,12 +1,17 @@
 /******** CSS Variables ********/
 
 :root {
-    --primary-color: #16324f;
-    --secondary-color: #087e8b;
-    --background-color: #f7f9fb;
-    --text-color: #1f2933;
+    --primary-color: #14213d;
+    --secondary-color: #4361ee;
+    --secondary-dark: #344acb;
+    --accent-color: #00b8a9;
+    --accent-dark: #007f75;
+    --highlight-color: #ff6b6b;
+    --highlight-dark: #a83240;
+    --background-color: #f4f8ff;
+    --text-color: #1f2937;
     --white: #ffffff;
-    --border-color: #d5dce3;
+    --border-color: #dce5f2;
 
     --heading-font: "Roboto", Arial, sans-serif;
     --body-font: "Open Sans", Arial, sans-serif;
@@ -26,6 +31,7 @@ body {
     margin: 0;
     font-family: var(--body-font);
     font-size: 1rem;
+    font-weight: 400;
     line-height: 1.6;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -39,9 +45,12 @@ img {
 /******** Header ********/
 
 .site-header {
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg,
+            var(--primary-color),
+            #243e70);
     color: var(--white);
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
+    border-bottom: 5px solid var(--accent-color);
 }
 
 .header-content {
@@ -57,11 +66,12 @@ img {
     width: 80px;
     height: 80px;
     object-fit: contain;
+    filter: brightness(0) invert(1);
 }
 
 .header-text h1 {
     font-family: var(--heading-font);
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
     margin: 0;
@@ -70,23 +80,26 @@ img {
 
 .header-text p {
     margin: 0.5rem 0 0;
-    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    color: #dce7ff;
 }
 
 /******** Main Content ********/
 
 main {
-    padding: 1rem;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 1rem;
 }
 
 section {
     background-color: var(--white);
     padding: 1.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
     border: 1px solid var(--border-color);
-    border-radius: 8px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(20, 33, 61, 0.05);
 }
 
 section:last-child {
@@ -112,7 +125,7 @@ h2 {
 }
 
 h3 {
-    color: var(--secondary-color);
+    color: var(--secondary-dark);
     font-size: 1.1rem;
     margin-top: 1.25rem;
 }
@@ -137,10 +150,14 @@ li {
     margin-bottom: 0.75rem;
 }
 
+li::marker {
+    color: var(--secondary-color);
+}
+
 /******** Links and Buttons ********/
 
 a {
-    color: var(--secondary-color);
+    color: var(--secondary-dark);
     text-decoration: underline;
     text-underline-offset: 3px;
 }
@@ -152,6 +169,16 @@ a:hover {
 button {
     font-family: var(--heading-font);
     font-weight: 500;
+    background-color: var(--secondary-dark);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.25rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-color);
 }
 
 /******** Color Scheme ********/
@@ -165,7 +192,7 @@ button {
 
 .color-card {
     padding: 1.5rem;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 1px solid var(--border-color);
 }
 
@@ -177,6 +204,8 @@ button {
     margin-bottom: 0.75rem;
 }
 
+/******** Deep Navy ********/
+
 .navy {
     background-color: var(--primary-color);
     color: var(--white);
@@ -186,14 +215,40 @@ button {
     color: var(--white);
 }
 
+/******** Electric Blue ********/
+
+.blue {
+    background-color: var(--secondary-dark);
+    color: var(--white);
+}
+
+.blue h3 {
+    color: var(--white);
+}
+
+/******** Vibrant Teal ********/
+
 .teal {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-dark);
     color: var(--white);
 }
 
 .teal h3 {
     color: var(--white);
 }
+
+/******** Energetic Coral ********/
+
+.coral {
+    background-color: var(--highlight-dark);
+    color: var(--white);
+}
+
+.coral h3 {
+    color: var(--white);
+}
+
+/******** Soft Ice ********/
 
 .off-white {
     background-color: var(--background-color);
@@ -203,6 +258,8 @@ button {
 .off-white h3 {
     color: var(--primary-color);
 }
+
+/******** Dark Slate ********/
 
 .dark-text {
     background-color: var(--text-color);
@@ -217,10 +274,10 @@ button {
 
 .typography-example {
     background-color: var(--background-color);
-    border-left: 5px solid var(--secondary-color);
+    border-left: 5px solid var(--accent-color);
     padding: 1rem;
     margin-top: 1.5rem;
-    border-radius: 0 8px 8px 0;
+    border-radius: 0 10px 10px 0;
 }
 
 .heading-example {
@@ -228,11 +285,13 @@ button {
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--primary-color);
+    margin-bottom: 1rem;
 }
 
 .body-example {
     font-family: var(--body-font);
     font-size: 1rem;
+    font-weight: 400;
     line-height: 1.7;
 }
 
@@ -243,7 +302,7 @@ button {
     padding: 1rem;
     background-color: var(--background-color);
     border: 1px solid var(--border-color);
-    border-radius: 8px;
+    border-radius: 10px;
     text-align: center;
 }
 
@@ -274,7 +333,8 @@ footer {
     background-color: var(--primary-color);
     color: var(--white);
     text-align: center;
-    padding: 1.25rem 1rem;
+    padding: 1.5rem 1rem;
+    border-top: 5px solid var(--accent-color);
 }
 
 footer p {
@@ -286,7 +346,7 @@ footer p {
 
 a:focus-visible,
 button:focus-visible {
-    outline: 3px solid var(--secondary-color);
+    outline: 3px solid var(--accent-dark);
     outline-offset: 3px;
 }
 
