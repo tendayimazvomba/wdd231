@@ -3,8 +3,11 @@
 :root {
     --primary-color: #14213d;
     --secondary-color: #4361ee;
+    --secondary-dark: #344acb;
     --accent-color: #00b8a9;
+    --accent-dark: #007f75;
     --highlight-color: #ff6b6b;
+    --highlight-dark: #a83240;
     --background-color: #f4f8ff;
     --text-color: #1f2937;
     --white: #ffffff;
@@ -28,6 +31,7 @@ body {
     margin: 0;
     font-family: var(--body-font);
     font-size: 1rem;
+    font-weight: 400;
     line-height: 1.6;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -76,6 +80,7 @@ img {
 
 .header-text p {
     margin: 0.5rem 0 0;
+    font-size: 1rem;
     font-weight: 600;
     color: #dce7ff;
 }
@@ -120,7 +125,7 @@ h2 {
 }
 
 h3 {
-    color: #2946c8;
+    color: var(--secondary-dark);
     font-size: 1.1rem;
     margin-top: 1.25rem;
 }
@@ -152,7 +157,7 @@ li::marker {
 /******** Links and Buttons ********/
 
 a {
-    color: #2946c8;
+    color: var(--secondary-dark);
     text-decoration: underline;
     text-underline-offset: 3px;
 }
@@ -164,12 +169,16 @@ a:hover {
 button {
     font-family: var(--heading-font);
     font-weight: 500;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-dark);
     color: var(--white);
     border: none;
     border-radius: 8px;
     padding: 0.75rem 1.25rem;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-color);
 }
 
 /******** Color Scheme ********/
@@ -209,7 +218,7 @@ button {
 /******** Electric Blue ********/
 
 .blue {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-dark);
     color: var(--white);
 }
 
@@ -220,23 +229,23 @@ button {
 /******** Vibrant Teal ********/
 
 .teal {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
+    background-color: var(--accent-dark);
+    color: var(--white);
 }
 
 .teal h3 {
-    color: var(--primary-color);
+    color: var(--white);
 }
 
 /******** Energetic Coral ********/
 
 .coral {
-    background-color: var(--highlight-color);
-    color: var(--primary-color);
+    background-color: var(--highlight-dark);
+    color: var(--white);
 }
 
 .coral h3 {
-    color: var(--primary-color);
+    color: var(--white);
 }
 
 /******** Soft Ice ********/
@@ -276,11 +285,13 @@ button {
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--primary-color);
+    margin-bottom: 1rem;
 }
 
 .body-example {
     font-family: var(--body-font);
     font-size: 1rem;
+    font-weight: 400;
     line-height: 1.7;
 }
 
@@ -335,7 +346,7 @@ footer p {
 
 a:focus-visible,
 button:focus-visible {
-    outline: 3px solid var(--accent-color);
+    outline: 3px solid var(--accent-dark);
     outline-offset: 3px;
 }
 
