@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Discover Bulawayo, Zimbabwe. Explore historic landmarks, natural attractions, museums, art galleries, and places of interest.">
+    <meta name="author" content="Tendayi Gabriel Mazvomba">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Discover Bulawayo | Bulawayo Chamber of Commerce">
+    <meta property="og:description"
+        content="Explore Bulawayo's heritage, culture, attractions, and business environment.">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://tendayimazvomba.github.io/wdd231/chamber/images/matobo-national-park.webp">
+    <meta property="og:url" content="https://tendayimazvomba.github.io/wdd231/chamber/discover.html">
+
+    <title>Discover | Bulawayo Chamber of Commerce</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="site-brand">
+            <img src="images/logo.svg" alt="Bulawayo Chamber of Commerce logo" width="70" height="70">
+
+            <div>
+                <span>Bulawayo</span>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <button id="nav-button" class="hamburger" type="button" aria-label="Toggle navigation menu"
+            aria-expanded="false">
+        </button>
+    </header>
+
+    <nav id="navigation" aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html" class="active" aria-current="page">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main class="discover-main">
+
+        <h1>Discover Bulawayo</h1>
+
+        <p class="discover-intro">
+            Known as the City of Kings and Queens, Bulawayo is
+            Zimbabwe's second-largest city and a centre of history,
+            culture, commerce, and tourism. Discover the attractions
+            that make Bulawayo and its surrounding region unique.
+        </p>
+
+        <!-- Visitor Message -->
+        <aside class="visitor-message" aria-label="Visitor information">
+            <p id="visit-message" aria-live="polite"></p>
+        </aside>
+
+        <!-- Attractions -->
+        <section class="discover-section" aria-labelledby="attractions-heading">
+
+            <h2 id="attractions-heading">
+                Places to Explore
+            </h2>
+
+            <div id="discover-cards" class="discover-grid">
+                <!-- Cards generated using JavaScript -->
+            </div>
+
+        </section>
+
+        <!-- Additional City Information -->
+        <section class="city-information">
+
+            <h2>Why Bulawayo?</h2>
+
+            <p>
+                Bulawayo is an important commercial and industrial
+                centre in Zimbabwe. Its railway heritage, cultural
+                institutions, tourism attractions, and strategic
+                location provide opportunities for businesses,
+                investors, and visitors.
+            </p>
+
+            <p>
+                The city is also a gateway to attractions such as
+                Matobo National Park and Khami Ruins, making it
+                an important destination for heritage tourism.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="contact-info">
+            <p><strong>Bulawayo Chamber of Commerce</strong></p>
+            <p>Bulawayo, Zimbabwe</p>
+            <p>info@bulawayochamber.example</p>
+        </div>
+
+        <div class="development-info">
+            <p>
+                &copy; <span id="currentyear"></span>
+                Bulawayo Chamber of Commerce
+            </p>
+            <p>Tendayi Gabriel Mazvomba | WDD 231</p>
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
