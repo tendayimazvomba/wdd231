@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Financial Goal Confirmation | Financial Compass</title>
+
+    <meta name="description"
+        content="Review your submitted personal financial goal and take the next step towards achieving it.">
+
+    <meta name="author" content="Tendayi Gabriel Mazvomba">
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/form-action.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+
+            <a href="index.html" class="brand" aria-label="Financial Compass homepage">
+                <img src="images/logo.svg" alt="" width="52" height="52">
+                <span>Financial Compass</span>
+            </a>
+
+            <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="primary-navigation">
+                <span aria-hidden="true">☰</span>
+            </button>
+
+            <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation">
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="tools.html" class="active" aria-current="page">Money Tools</a>
+                    </li>
+                    <li><a href="resources.html">Learning Hub</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Page Introduction -->
+        <section class="page-intro">
+
+            <div class="section-container">
+
+                <p class="eyebrow">YOUR FINANCIAL FUTURE</p>
+
+                <h1>Financial Goal Summary</h1>
+
+                <p>
+                    Every meaningful financial achievement
+                    begins with a clear goal and a plan.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Confirmation -->
+        <section class="confirmation-section section-container">
+
+            <div class="confirmation-card">
+
+                <div class="confirmation-icon" aria-hidden="true">
+                    🎯
+                </div>
+
+                <h2 id="confirmation-heading">
+                    Your Financial Goal
+                </h2>
+
+                <p id="confirmation-message">
+                    Reviewing your submitted information...
+                </p>
+
+                <div id="goal-summary" class="goal-summary" aria-live="polite">
+                </div>
+
+                <div class="confirmation-actions">
+
+                    <a href="tools.html" class="button button-blue">
+                        ← Back to Money Tools
+                    </a>
+
+                    <a href="resources.html" class="button button-reset">
+                        Explore Learning Hub →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h2>Financial Compass</h2>
+                <p>Your Money. Your Future. Your Direction.</p>
+            </div>
+
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="tools.html">Money Tools</a>
+                <a href="resources.html">Learning Hub</a>
+                <a href="attributions.html">Attributions</a>
+                <a href="siteplan.html">Site Plan</a>
+                <a href="#" id="video-link">Video Demonstration</a>
+            </nav>
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; <span id="current-year"></span>
+                    Financial Compass | Tendayi Gabriel Mazvomba
+                </p>
+
+                <p>
+                    Last Modified:
+                    <span id="last-modified"></span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

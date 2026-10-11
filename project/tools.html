@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Money Tools | Financial Compass</title>
+
+    <meta name="description"
+        content="Use free interactive money tools to calculate your monthly budget, plan savings, and set personal financial goals.">
+
+    <meta name="author" content="Tendayi Gabriel Mazvomba">
+
+    <meta property="og:title" content="Money Tools | Financial Compass">
+    <meta property="og:description"
+        content="Practical calculators and goal-setting tools to help you manage your money.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://tendayimazvomba.github.io/wdd231/project/images/hero.webp">
+    <meta property="og:url" content="https://tendayimazvomba.github.io/wdd231/project/tools.html">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/calculators.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+
+            <a href="index.html" class="brand" aria-label="Financial Compass homepage">
+                <img src="images/logo.svg" alt="" width="52" height="52">
+                <span>Financial Compass</span>
+            </a>
+
+            <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="primary-navigation">
+                <span aria-hidden="true">☰</span>
+            </button>
+
+            <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="tools.html" class="active" aria-current="page">Money Tools</a>
+                    </li>
+                    <li><a href="resources.html">Learning Hub</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Page Introduction -->
+        <section class="page-intro">
+            <div class="section-container">
+                <p class="eyebrow">PLAN • SAVE • GROW</p>
+                <h1>Money Tools</h1>
+                <p>
+                    Take control of your finances with practical
+                    calculators and financial planning tools.
+                </p>
+            </div>
+        </section>
+
+        <!-- Budget Calculator -->
+        <section class="calculator-section section-container" aria-labelledby="budget-heading">
+
+            <div class="tool-heading">
+                <span class="tool-emoji" aria-hidden="true">📊</span>
+                <div>
+                    <h2 id="budget-heading">Monthly Budget Calculator</h2>
+                    <p>
+                        Find out how much money you have left
+                        after covering your monthly expenses.
+                    </p>
+                </div>
+            </div>
+
+            <div class="calculator-layout">
+
+                <form id="budget-form" class="tool-card">
+
+                    <h3>Your Monthly Finances</h3>
+
+                    <p class="form-note">
+                        Enter amounts in USD. Use zero for expenses
+                        that do not apply to you.
+                    </p>
+
+                    <div class="form-group">
+                        <label for="monthly-income">
+                            Monthly Income (USD)
+                        </label>
+                        <input type="number" id="monthly-income" name="income" min="0" step="0.01"
+                            placeholder="e.g. 800" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="housing">Rent or Housing (USD)</label>
+                        <input type="number" id="housing" name="housing" min="0" step="0.01" value="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="food">Food and Groceries (USD)</label>
+                        <input type="number" id="food" name="food" min="0" step="0.01" value="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="transport">Transport (USD)</label>
+                        <input type="number" id="transport" name="transport" min="0" step="0.01" value="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="utilities">Utilities (USD)</label>
+                        <input type="number" id="utilities" name="utilities" min="0" step="0.01" value="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="other-expenses">
+                            Other Expenses (USD)
+                        </label>
+                        <input type="number" id="other-expenses" name="other" min="0" step="0.01" value="0" required>
+                    </div>
+
+                    <button type="submit" class="button button-blue form-button">
+                        Calculate Budget →
+                    </button>
+
+                    <button type="reset" class="button button-reset form-button">
+                        Clear Form
+                    </button>
+
+                </form>
+
+                <div class="tool-card results-card">
+
+                    <h3>Budget Summary</h3>
+
+                    <div id="budget-results" class="results-content" aria-live="polite">
+
+                        <p class="result-placeholder">
+                            Enter your income and expenses,
+                            then select Calculate Budget
+                            to see your results.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Savings Calculator -->
+        <section class="savings-section" aria-labelledby="savings-heading">
+
+            <div class="section-container">
+
+                <div class="tool-heading">
+                    <span class="tool-emoji" aria-hidden="true">💰</span>
+                    <div>
+                        <h2 id="savings-heading">Savings Goal Calculator</h2>
+                        <p>
+                            Calculate how much you need to save
+                            every month to reach your financial goal.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="calculator-layout">
+
+                    <form id="savings-form" class="tool-card">
+
+                        <h3>Plan Your Savings</h3>
+
+                        <div class="form-group">
+                            <label for="savings-target">
+                                Savings Target (USD)
+                            </label>
+                            <input type="number" id="savings-target" name="target" min="0.01" step="0.01"
+                                placeholder="e.g. 2000" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="current-savings">
+                                Current Savings (USD)
+                            </label>
+                            <input type="number" id="current-savings" name="current" min="0" step="0.01" value="0"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="savings-months">
+                                Time to Reach Goal (Months)
+                            </label>
+                            <input type="number" id="savings-months" name="months" min="1" max="600" step="1"
+                                placeholder="e.g. 12" required>
+                        </div>
+
+                        <button type="submit" class="button button-blue form-button">
+                            Calculate Savings →
+                        </button>
+
+                        <button type="reset" class="button button-reset form-button">
+                            Clear Form
+                        </button>
+
+                    </form>
+
+                    <div class="tool-card results-card">
+
+                        <h3>Your Savings Plan</h3>
+
+                        <div id="savings-results" class="results-content" aria-live="polite">
+
+                            <p class="result-placeholder">
+                                Enter your savings target,
+                                current savings, and timeframe
+                                to calculate your plan.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Financial Goals -->
+        <section class="goals-section section-container" aria-labelledby="goals-heading">
+
+            <div class="tool-heading">
+                <span class="tool-emoji" aria-hidden="true">🎯</span>
+                <div>
+                    <h2 id="goals-heading">Set a Financial Goal</h2>
+                    <p>
+                        Give your financial ambitions a clear direction
+                        by recording a personal goal.
+                    </p>
+                </div>
+            </div>
+
+            <form id="goals-form" class="tool-card goals-form" action="form-action.html" method="get">
+
+                <div class="form-group">
+                    <label for="goal-name">Your Name</label>
+                    <input type="text" id="goal-name" name="name" minlength="2" maxlength="60" autocomplete="name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="goal-type">Financial Goal</label>
+                    <select id="goal-type" name="goal" required>
+                        <option value="" disabled selected>
+                            Select a financial goal
+                        </option>
+                        <option value="Emergency Fund">
+                            Build an Emergency Fund
+                        </option>
+                        <option value="Education">
+                            Save for Education
+                        </option>
+                        <option value="Business">
+                            Start a Business
+                        </option>
+                        <option value="Home">
+                            Save for a Home
+                        </option>
+                        <option value="Debt Repayment">
+                            Repay Debt
+                        </option>
+                        <option value="Other">
+                            Other Financial Goal
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="goal-amount">
+                        Target Amount (USD)
+                    </label>
+                    <input type="number" id="goal-amount" name="amount" min="0.01" step="0.01" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="goal-date">
+                        Target Completion Date
+                    </label>
+                    <input type="date" id="goal-date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="goal-message">
+                        Why is this goal important to you?
+                    </label>
+                    <textarea id="goal-message" name="reason" rows="4" maxlength="500"
+                        placeholder="Describe your motivation..." required></textarea>
+                </div>
+
+                <button type="submit" class="button button-blue form-button">
+                    Save My Financial Goal →
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h2>Financial Compass</h2>
+                <p>Your Money. Your Future. Your Direction.</p>
+            </div>
+
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="tools.html">Money Tools</a>
+                <a href="resources.html">Learning Hub</a>
+                <a href="attributions.html">Attributions</a>
+                <a href="siteplan.html">Site Plan</a>
+                <a href="#" id="video-link">Video Demonstration</a>
+            </nav>
+
+            <div class="footer-bottom">
+                <p>
+                    &copy; <span id="current-year"></span>
+                    Financial Compass | Tendayi Gabriel Mazvomba
+                </p>
+                <p>
+                    Last Modified:
+                    <span id="last-modified"></span>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

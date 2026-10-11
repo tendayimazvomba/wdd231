@@ -1,0 +1,309 @@
+/******** Tablet Layout ********/
+
+@media (min-width: 600px) {
+
+    /******** Header ********/
+
+    .brand {
+        font-size: 1.25rem;
+    }
+
+    /******** Hero ********/
+
+    .hero-content {
+        padding: 4rem 2rem;
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
+    }
+
+    /******** Introduction ********/
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /******** Financial Topics ********/
+
+    .topics-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /******** Footer ********/
+
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        text-align: left;
+    }
+}
+
+/******** Desktop Layout ********/
+
+@media (min-width: 900px) {
+
+    /******** Header ********/
+
+    .header-container {
+        flex-wrap: nowrap;
+        min-height: 82px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .primary-navigation,
+    .primary-navigation.open {
+        display: block;
+        flex-basis: auto;
+    }
+
+    .primary-navigation ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0;
+    }
+
+    .primary-navigation a {
+        padding: 0.65rem 1rem;
+    }
+
+    /******** Hero ********/
+
+    .hero {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        min-height: 520px;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: 0;
+        padding: 4rem 3rem;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.5rem, 4vw, 4rem);
+    }
+
+    .hero-image {
+        min-height: 520px;
+    }
+
+    .hero-image img {
+        height: 100%;
+        max-height: none;
+    }
+
+    /******** Introduction ********/
+
+    .introduction {
+        padding-block: 5rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    /******** Financial Topics ********/
+
+    .topics-section {
+        padding-block: 5rem;
+    }
+
+    .topics-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .topic-content {
+        padding: 1.25rem;
+    }
+
+    .topic-content h3 {
+        font-size: 1.15rem;
+    }
+
+    /******** Money Tools ********/
+
+    .tools-preview {
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+        gap: 4rem;
+        padding-block: 5rem;
+    }
+
+    .tools-preview-visual {
+        min-height: 360px;
+    }
+
+    /******** Call to Action ********/
+
+    .cta-section {
+        padding-block: 5rem;
+    }
+
+    /******** Footer ********/
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .footer-links {
+        justify-content: flex-end;
+        align-content: start;
+    }
+
+    .footer-bottom {
+        grid-column: 1 / -1;
+    }
+}
+
+/******** Large Desktop Layout ********/
+
+@media (min-width: 1200px) {
+
+    .hero-content {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .section-container {
+        width: min(100% - 3rem, 1150px);
+    }
+}
+
+
+/******** Money Tools Tablet Layout ********/
+
+@media (min-width: 600px) {
+    .tool-card {
+        padding: 2rem;
+    }
+
+    .tool-heading {
+        align-items: center;
+    }
+}
+
+/******** Money Tools Desktop Layout ********/
+
+@media (min-width: 900px) {
+    .calculator-layout {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+    }
+
+    .calculator-section,
+    .savings-section,
+    .goals-section {
+        padding-block: 5rem;
+    }
+
+    .tool-heading {
+        margin-bottom: 2.5rem;
+    }
+}
+
+
+/******** Confirmation Desktop Layout ********/
+
+@media (min-width: 600px) {
+    .confirmation-card {
+        padding: 3rem;
+    }
+
+    .summary-row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .summary-value {
+        max-width: 65%;
+        text-align: right;
+    }
+
+    .confirmation-actions {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+/******** Learning Hub Tablet Layout ********/
+
+@media (min-width: 600px) {
+    .resources-controls {
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+        align-items: end;
+    }
+
+    .resources-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .dialog-header,
+    .dialog-content {
+        padding: 2rem;
+    }
+}
+
+/******** Learning Hub Desktop Layout ********/
+
+@media (min-width: 900px) {
+    .resources-section {
+        padding-block: 5rem;
+    }
+
+    .resources-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .resource-card {
+        padding: 2rem;
+    }
+
+    .resource-card:hover {
+        box-shadow: 0 10px 25px var(--shadow-color);
+    }
+}
+
+
+/******** Attributions Tablet Layout ********/
+
+@media (min-width: 600px) {
+    .attributions-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/******** Attributions Desktop Layout ********/
+
+@media (min-width: 900px) {
+    .attributions-section {
+        padding-block: 5rem;
+    }
+
+    .attributions-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .attribution-card {
+        padding: 2rem;
+    }
+}

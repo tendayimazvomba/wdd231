@@ -1,0 +1,227 @@
+[
+    {
+        "id": 1,
+        "title": "Creating Your First Budget",
+        "category": "budgeting",
+        "level": "Beginner",
+        "duration": 5,
+        "icon": "📊",
+        "summary": "Learn how to organise your income and expenses into a realistic monthly spending plan.",
+        "content": [
+            "A budget is a plan for how you will use your money over a specific period, usually one month.",
+            "Start by listing all reliable sources of income. Then record your essential expenses, such as rent, food, transport, and utilities.",
+            "Next, identify flexible expenses such as entertainment and eating out. Compare your total spending with your income and adjust where necessary.",
+            "Review your budget regularly. The aim is to make informed decisions, not to eliminate every enjoyable expense."
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Understanding Needs and Wants",
+        "category": "budgeting",
+        "level": "Beginner",
+        "duration": 4,
+        "icon": "🛒",
+        "summary": "Discover how separating essential expenses from optional purchases improves financial decisions.",
+        "content": [
+            "Needs are expenses required for basic living and important obligations. Wants are purchases that improve comfort or enjoyment but can often be delayed.",
+            "Basic groceries and necessary transport are usually needs. Expensive entertainment and luxury upgrades are generally wants.",
+            "The distinction depends on your circumstances. A smartphone may be essential for someone's employment, while an expensive upgrade may be optional.",
+            "Before purchasing something, ask whether it is necessary now and whether it fits within your budget."
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Managing Irregular Income",
+        "category": "budgeting",
+        "level": "Intermediate",
+        "duration": 6,
+        "icon": "📅",
+        "summary": "Build a flexible budget when your earnings change from month to month.",
+        "content": [
+            "Irregular income is common among freelancers, small business owners, and commission-based workers.",
+            "Review several months of earnings to identify a conservative income amount for planning purposes.",
+            "Prioritise essential expenses and build a cash reserve during stronger months to help cover weaker months.",
+            "Track income and expenses frequently, and avoid treating unusually high earnings as guaranteed future income."
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Building an Emergency Fund",
+        "category": "saving",
+        "level": "Beginner",
+        "duration": 5,
+        "icon": "🛟",
+        "summary": "Prepare for unexpected expenses by creating a financial safety buffer.",
+        "content": [
+            "An emergency fund is money set aside for unexpected but necessary expenses, such as urgent repairs or temporary loss of income.",
+            "Start with a manageable savings target, even if you can only contribute a small amount regularly.",
+            "A longer-term goal may be to cover several months of essential expenses, depending on your circumstances.",
+            "Keep emergency savings accessible and separate from money used for everyday spending."
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Setting SMART Savings Goals",
+        "category": "saving",
+        "level": "Beginner",
+        "duration": 5,
+        "icon": "🎯",
+        "summary": "Turn a general desire to save into a clear and measurable financial target.",
+        "content": [
+            "SMART goals are Specific, Measurable, Achievable, Relevant, and Time-bound.",
+            "Instead of saying 'I want to save money', set a goal such as 'I want to save $600 for school expenses in 12 months'.",
+            "Divide the remaining target by the number of months available to estimate your monthly contribution.",
+            "Review progress regularly and adjust your plan when your financial circumstances change."
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Understanding Savings Interest",
+        "category": "saving",
+        "level": "Intermediate",
+        "duration": 7,
+        "icon": "💰",
+        "summary": "Understand how interest can help savings grow and what affects the amount earned.",
+        "content": [
+            "Interest is money a financial institution may pay you for keeping funds in an eligible savings product.",
+            "Simple interest is calculated on the original principal. Compound interest can also earn interest on previously credited interest.",
+            "For example, $1,000 earning 5% simple interest for one year would generate $50 before any applicable taxes or fees.",
+            "Compare interest rates, fees, withdrawal restrictions, and account conditions before selecting a savings product."
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Choosing a Bank Account",
+        "category": "banking",
+        "level": "Beginner",
+        "duration": 5,
+        "icon": "🏦",
+        "summary": "Learn the differences between everyday transaction accounts and savings accounts.",
+        "content": [
+            "A transaction account is generally designed for receiving money, making payments, and managing everyday expenses.",
+            "A savings account is designed primarily for setting money aside and may offer interest or restrictions on withdrawals.",
+            "When comparing accounts, examine maintenance fees, transaction charges, minimum balances, accessibility, and digital banking services.",
+            "Choose an account that matches how you intend to use it, rather than selecting one based on a single advertised feature."
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Bank Charges and Transaction Fees",
+        "category": "banking",
+        "level": "Intermediate",
+        "duration": 6,
+        "icon": "🧾",
+        "summary": "Recognise common banking fees and learn how to compare the total cost of an account.",
+        "content": [
+            "Banks may charge fees for account maintenance, cash withdrawals, transfers, cards, or certain services.",
+            "Some accounts offer reduced fees or exemptions when customers meet specific eligibility conditions.",
+            "Check the current tariff guide and consider how frequently you use each service.",
+            "An account with a low monthly maintenance fee may still be expensive if you regularly make transactions that attract higher charges."
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Staying Safe with Digital Banking",
+        "category": "banking",
+        "level": "Beginner",
+        "duration": 5,
+        "icon": "🔒",
+        "summary": "Protect your money and personal information when using mobile and online banking.",
+        "content": [
+            "Digital banking allows customers to access financial services through mobile applications, websites, and other electronic channels.",
+            "Use strong passwords, enable available multifactor authentication, and keep your device software updated.",
+            "Never disclose your PIN, password, or one-time verification code to someone claiming to represent your bank.",
+            "Verify unexpected messages independently using official banking channels and report suspicious activity promptly."
+        ]
+    },
+    {
+        "id": 10,
+        "title": "How Credit Works",
+        "category": "credit",
+        "level": "Beginner",
+        "duration": 6,
+        "icon": "💳",
+        "summary": "Understand borrowing, repayment obligations, and the true cost of credit.",
+        "content": [
+            "Credit allows a borrower to use money now and repay it according to an agreed schedule.",
+            "Lenders may charge interest and other fees. The total cost depends on the amount borrowed, rate, repayment period, and product conditions.",
+            "Before borrowing, review the repayment amount, payment dates, penalties, and total amount repayable.",
+            "Borrowing should support a realistic financial need and remain affordable alongside essential living expenses."
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Understanding Interest on Loans",
+        "category": "credit",
+        "level": "Intermediate",
+        "duration": 7,
+        "icon": "📈",
+        "summary": "Learn how loan interest and repayment terms influence borrowing costs.",
+        "content": [
+            "Loan interest is the cost charged by a lender for providing borrowed funds.",
+            "Interest may be calculated using different methods, including on a reducing outstanding balance or a flat principal amount.",
+            "A longer repayment period may reduce individual instalments but can increase the total interest paid.",
+            "Compare the total repayment amount, effective interest rate, fees, and terms rather than focusing only on the monthly instalment."
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Avoiding Problem Debt",
+        "category": "credit",
+        "level": "Intermediate",
+        "duration": 6,
+        "icon": "⚖️",
+        "summary": "Recognise debt warning signs and develop responsible repayment habits.",
+        "content": [
+            "Debt can become difficult to manage when repayments consume too much income or require additional borrowing.",
+            "Warning signs include repeatedly missing payments, borrowing to cover essential bills, and paying only minimum amounts without reducing balances.",
+            "Create a complete list of debts, interest rates, due dates, and repayment obligations.",
+            "If repayments become unaffordable, contact your lender early to discuss available options and avoid taking on unnecessary additional debt."
+        ]
+    },
+    {
+        "id": 13,
+        "title": "Creating a Personal Financial Plan",
+        "category": "planning",
+        "level": "Beginner",
+        "duration": 6,
+        "icon": "🗺️",
+        "summary": "Connect your income, spending, savings, and borrowing decisions to longer-term goals.",
+        "content": [
+            "A personal financial plan helps you decide what you want to achieve and how your money can support those goals.",
+            "Begin by understanding your current income, expenses, savings, and debts.",
+            "Identify short-term, medium-term, and long-term priorities, then assign realistic actions and deadlines.",
+            "Review your plan when major life events or financial circumstances change."
+        ]
+    },
+    {
+        "id": 14,
+        "title": "Planning for Education Expenses",
+        "category": "planning",
+        "level": "Beginner",
+        "duration": 5,
+        "icon": "🎓",
+        "summary": "Estimate the cost of education and develop a practical savings approach.",
+        "content": [
+            "Education expenses may include tuition, books, transport, accommodation, internet access, and examination fees.",
+            "List the expected costs and identify when each payment will be required.",
+            "Calculate how much you need to save regularly and investigate scholarships, grants, or other appropriate funding sources.",
+            "Include a reasonable allowance for unexpected costs and review your estimates as prices change."
+        ]
+    },
+    {
+        "id": 15,
+        "title": "Protecting Yourself from Financial Scams",
+        "category": "planning",
+        "level": "Beginner",
+        "duration": 6,
+        "icon": "🛡️",
+        "summary": "Identify common fraud warning signs and make safer financial decisions.",
+        "content": [
+            "Financial scams often use urgency, secrecy, unrealistic promises, or impersonation to pressure people into sending money.",
+            "Be cautious of investments promising guaranteed unusually high returns and messages asking for confidential banking details.",
+            "Check the legitimacy of financial service providers through appropriate official channels before making payments.",
+            "If you suspect fraud, stop communicating with the suspected scammer and report the incident through your financial institution's official channels."
+        ]
+    }
+]
