@@ -69,7 +69,7 @@ if (budgetForm && budgetResults) {
                 <strong>${formatMoney(totalExpenses)}</strong>
             </div>
 
-            <div class="result-item result-highlight">
+            <div class="result-item result-highlight ${balance < 0 ? "result-negative" : ""}">
                 <span>Remaining Balance</span>
                 <strong>${formatMoney(balance)}</strong>
             </div>

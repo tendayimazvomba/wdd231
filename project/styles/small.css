@@ -793,6 +793,16 @@ button:focus-visible {
     color: var(--text-color);
 }
 
+/******** Negative Budget Result ********/
+
+.result-negative {
+    border-color: var(--highlight-dark);
+}
+
+.result-negative strong {
+    color: var(--highlight-dark);
+}
+
 /******** Savings Progress ********/
 
 .progress-container {
